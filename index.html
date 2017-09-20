@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UTDesign TImodules</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/w3.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    
+   
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-custom navbar-fixed-top ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-left" href="#"><img src="img/logo.jpg"></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav ">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Navigate</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hoverbuttons " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="glyphicon"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">My Account</li>
+                               <div id="navbar" class="navbar-collapse collapse">
+                                    <form class="navbar-form">
+
+                                            <input type="text" placeholder="Username" class="form-control">
+                                            <input type="password" placeholder="Password" class="form-control my_littlepad">
+
+                                        <button type="submit" class="btn btn-success my_littlepad">Sign in</button>
+                                    </form>
+
+                                </div>
+                            
+                        </ul>
+                    </li>
+          
+     <li><a href="#"><span class="glyphicon"></span> Contact US</a></li>
+     
+        </ul>
+    </div>
+  </div>
+</nav>
+    
+    
+    
+    
+    
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="mainmenu ">
+                <li class=" myback1">
+                    
+                       Module contents
+                    
+                </li>
+            
+               
+        <li class ="">
+                    <a href="#foo">Module 1: Learning about Android!</a>
+                    <ul class="submenu">
+                    <li><a href="#featuresandroid">Features of Android</a></li>
+                    <li><a href="#androidarch">Architecture of Android</a></li>
+                    <li><a href="#environmentsetup">Preparing Environment</a></li>
+                    </ul>
+                </li>
+
+          <li class ="">
+                    <a href="#androidui">Module 2: Android Studio Interface</a>
+                    <ul class="submenu">
+                    <li><a href="#androidui">Tour of Android studio</a></li>
+                    <li><a href="">Quiz</a></li>
+                    </ul>
+                </li>
+                
+                
+                
+          <li class ="">
+                    <a href="#">Module 3: Hello World!</a>
+                    <ul class="submenu">
+                    <li><a href="">Making first app</a></li>
+                    <li><a href="">Running on Emulator</a></li>
+                    <li><a href="">Running App on Phone</a></li>
+                    <li><a href="">Quiz</a></li>
+                    </ul>
+                </li>
+                
+                
+          <li class ="">
+                    <a href="#">Module 4: Getting started with Bluetooth</a>
+                    <ul class="submenu">
+                    <li><a href="">Theory of Bluetooth </a></li>
+                    <li><a href="">Making Android bluetooth App</a></li>
+                    <li><a href="">Applications of Bluetooth</a></li>
+                    <li><a href="">Preview of next module</a></li></ul>
+                </li>
+               
+                      
+                    </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="foo" class="toppadd">Learning about Android!</h1>
+                        <br>
+                        <p class ="sectiondata">Android is Linux based open source operating system that runs on mobile phones and tablets. Android is
+based on the Linux kernel and as such is open source so it is able to be manipulated. Since software to
+write these Android applications is open source so it is free to setup. The latest version is Android 6
+Marshmallow, which will gradually become available for more and more devices over the coming
+months. This is completely opposite to other software like Apple’s IOS or Microsoft’s Windows operating
+system.
+    <!--   <img class = "sectionimg" src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+        -->
+         </p>              
+                       
+                       
+<br>
+<br>
+<br>
+  <br>
+<br>
+<br>                           
+       <h1 class="toppadd" id="featuresandroid">Features of android:</h1>                
+                       
+    <p>
+    <br>
+<li><b>Good GUI :</b></li>
+<p class="smallpad">Android OS provides good base screen interface for the developer.</p>
+<li><b>Database :</b></li>
+<p class="smallpad">Uses SQLite lightweight relational database can be used for data storage</p>
+<li><b>Connectivity:</b></li>
+<p class="smallpad">wi-fi, Bluetooth and many new available technologies like NFC are supported by
+android</p>
+<li><b>Multitouch and multitask:</b></li>
+<p class="smallpad">One can switch between multiple apps easily.</p>
+And many more……
+Android applications are generally developed in JAVA language using Android software development kit.
+Those apps are hosted on Google Play Store, Amazon Appstore and other locations. Android is growing
+fast and has been largest installed base mobile platform in the world.
+This module aims to learn the architecture of android, environment setup to make simple android app.
+</p>   
+
+
+<br>
+
+      <br>
+                
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn btn-success">More resources.</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Learn More...</h2>
+    </div>
+    <div class="modal-body">
+      <p>If you want to explore other available tutorials by google
+https://developer.android.com/training/index.html ,
+By http://www.coreservlets.com/android-tutorial/
+</p>
+      <p>Note: Want to learn more about the available android versions/ API levels?
+:- https://en.wikipedia.org/wiki/Android_version_history</p>
+    </div>
+    <div class="modal-footer">
+      <h3>UTDesign Studio</h3>
+    </div>
+  </div>
+
+</div>
+                      
+ <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                             
+                                    
+                                           
+                                                  
+                                                         
+                                                                
+                                                                              
+                       
+   <br><br><br>                    
+                       
+                       
+       <h1 class="toppadd" id="androidarch">Architecture of Android</h1>                
+                       <br>
+    <p>The Linux Kernel
+Positioned at the bottom of the Android software stack, the Linux Kernel provides a level of abstraction
+between the device hardware and the upper layers of the Android software stack. The kernel provides
+preemptive multitasking, low-level core system services such as memory, process and power
+management in addition to providing a network stack and device drivers for hardware such as the
+device display, Wi-Fi and audio.</p>                   
+                       
+                       
+                       
+       <h1 class="toppadd" id="environmentsetup">Preparing environment</h1>     <br>           
+                       
+    <b>OS requirements:</b> <br>
+  <p>  
+User should have one of the following operating systems to develop android applications:
+<li>Microsoft Windows XP or later version.</li>
+<li>Linux including GNU C Library or later (Ubuntu).</li>
+<li>Mac OS X 10.5.8 or later version with Intel chip.</li><br>
+Other required tools to create the environment to develop android applications which are freely
+available.
+ <br>
+<ul>
+ <li><b>Java JDK</b></li>
+<p class="smallpad">Get the latest version for respective operating system and architecture from Oracle website: <a  class="linkcolor" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Link to JAVA JDK.</a>
+</p>
+<li><b>Setting up PATH</b></li>
+<p class="smallpad">After installing java development kit we need to configure the setup by setting up PATH and
+JAVA_HOME variable. This refers to the directory that contains java and javac.
+Right-click on My Computer, select Properties, then Advanced, then Environment Variables.
+Then, you would update the PATH value.</p>
+<li><b>Android SDk</b></li>
+<p class="smallpad">Android SDK can be installed as IDE package or plug-in or command line tools can be listed in : <a class="linkcolor" href="
+https://developer.android.com/studio/releases/sdk-tools.html">Link to Android SDK.</a></p>
+<li><b>Java runtime environment JRE</b></li>
+<p class="smallpad">Get the latest version for respective operating system and architecture from Oracle website:<a class="linkcolor" href="
+http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Link to JRE download.</a></p>
+<li><b>Android Studio or other IDE</b></li>
+<p class="smallpad">Official IDE to develop the android applications can be downloaded from:<a class="linkcolor" href="
+https://developer.android.com/studio/index.html">Eclipse Downloads.</a>
+Alternatively, Eclipse IDE can be used for coding the apps using installing Android plug-in for
+same IDE which is available at: <a class="linkcolor" href="http://www.eclipse.org/downloads/packages/eclipse-ide-javadevelopers/keplersr1">Link to plug-in.</a>
+Here installing the android package for eclipse IDE can be sophisticated. Follow the link for small
+tutorial to install these packages:
+<a class="linkcolor" href="https://www.tutorialspoint.com/android/android_eclipse.htm">Plug-in in stalltion tutorial.</a></p></ul>
+      </p>                   
+       
+                       <h1 class="toppadd" id="androidui">Android Studio User interface</h1>                
+                       
+    <p></p>                   
+                       
+                        <h1 class="toppadd" id="featuresandroid">Features of android:</h1>                
+                       
+    <p></p>                   
+       
+                      
+                       
+        <br><br><br>                    
+                                   
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    margin-top: 30px;
+    
+}
+
+#wrapper.toggled {
+    
+}
+
+#sidebar-wrapper {
+    margin-top: 20px;
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: rgba(182,243,134, 0.3)     ;
+    
+    
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+}
+    
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #dfdcfc;
+   
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #f17b3a;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #dfdcfc;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+
+/****************************/
+
+
+
+
+
+
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 300px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+ background: rgba(255,164,103, .35);   
+  text-decoration: none;
+  padding: 10px;
+  
+ margin-left: 10px;
+ margin-right: 10px; 
+    
+    backface-visibility: visible;
+    padding-left: 5px;
+    font: 700 14px 'Open Sans', sans-serif;
+    text-align: left;
+    color: #4d4946;
+    text-shadow: 0 1p;
+    
+    padding:15px;
+                   
+                
+                    background-image: linear-gradient(to left,
+                                      transparent,
+                                      transparent 50%,
+                                      #ffc966 50%,
+                                      #ffc966);
+                   background-position: 100% 0;
+    background-size: 200% 100%;
+    transition:  1s ease-in;
+    
+    
+    
+    
+}
+
+/* add hover behaviour */
+
+
+
+.mainmenu a:hover {
+  
+ background-position: 0 0;
+                    color:#333;
+
+}
+
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  
+  max-height: 250px;
+   
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #fff6e5;
+
+    backface-visibility: visible;
+    padding-left: 40px;
+    font: 700 13px 'Open Sans', sans-serif;
+    text-align: left;
+    color: #7a7c77;
+    text-shadow: 0 1p;
+    
+    
+    
+    
+       
+    padding:-5px;
+                   
+                
+                    background-image: linear-gradient(to left,
+                                      transparent,
+                                      transparent 50%,
+                                      #d2e5fa 50%,
+                                      #d2e5fa);
+                   background-position: 100% 0;
+    background-size: 200% 100%;
+    transition:  .40s ease-in;
+    
+     
+    
+
+    
+    
+    
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+      background-position: 50 50;
+
+    color:#4c4f48;
+
+                    
+    
+}
+
+.submenu a:after {
+  background-color: #ffe4b2;
+    color:#4c4f48;
+    transform-origin:left;
+  transition:width 0.25s ease;
+    
+  z-index:-1;
+}
+
+
+
+.submenu a:hover::after {
+  width: 100%;
+      
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+
+/*******************button effect*********************/
+
+.fill:hover {
+  color: whitesmoke;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #383736;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+
+/*************************************/
+
+.myback1 {
+    
+    height: 45px;
+    
+    margin-bottom: 5px;
+    padding: 10px 15px 12px;
+    font: 700 20px 'Open Sans', sans-serif;
+    text-align: center;
+    color: #757171;
+    text-shadow: 0 1px 0 rgba(255,255,255,.9);
+    background: #f5f4f5;
+    
+}
+
+
+.navbar-custom {
+    background-color:#c75b12  ;
+    color:#fff;
+    border-radius:0;
+    font: 700 16px 'Open Sans', sans-serif;
+}
+
+.mynav {
+    color:#f4f4f4;
+    
+}
+
+.navimg {
+    width: 150px;
+    height: 25px;
+    
+}
+
+
+.smallpad {
+    padding-left: 30px;
+}
+
+.toppadd {
+    padding-top: 70px;
+}
+
+.sectiondata {
+    float: left;
+    
+}
+
+.sectionimg {
+    float: right;
+}
+
+
+.linkcolor {
+    color: darkblue;
+    
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #0e6606;
+    color: white;
+}
+
+.modal-body {padding: 20px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #46bb3b;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
